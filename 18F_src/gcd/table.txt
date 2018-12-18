@@ -1,0 +1,10 @@
+TrivialGCD time cost, EuclidGCD time cost, Speed Up
+166.131µs,2.033µs,81
+1.774339ms,2.592µs,684
+12.138651ms,3.396µs,3574
+113.485275ms,3.571µs,31779
+TrivialGCD time cost, EuclidGCD time cost, Speed Up
+126.729µs,1.653µs,76
+1.200028ms,2.299µs,521
+10.786586ms,2.416µs,4464
+108.300702ms,6.023µs,17981

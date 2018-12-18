@@ -1,0 +1,34 @@
+PlayGoL (initialBoard, numGens)
+	boards <- array of numGens + 1 GoL boards
+	boards[0] <- initialBoard
+	for i in range(1, numGens + 1)
+		boards[i] <- UpdataBoard(boards[i-1])
+	return boards
+
+UpdataBoard(currentBoard)
+	numRows <- CountRows(currentBoard)
+	numCols <- CountCol(currentBoard)
+	newBoard <- InitializeBoard(numRows, numCols)
+	for i in range(0, numRows)
+		for j in range(0, numCols)
+			newBoard[i][j] <- UpdataCell(currentBoard, i, j)
+	return newBoard
+
+InitializeBoard(numRows, numCols)
+
+UpdataCell(currentBoard, i, j)	
+	if currentBoard[i][j] == true
+		if CountNeighbor(currentBoard, i, j) == 2/3
+			return true
+		else
+			return false
+	if currentBoard[i][j] == false
+		if CountNeighbor(currentBoard, i, j) == 3
+			return true
+		else
+			return false
+
+CountNeighbor(currentBoard, i, j)
+	neighborCount := 0
+	
+	
